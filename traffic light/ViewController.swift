@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     @IBOutlet var redLight: UIView!
     @IBOutlet var yellowLight: UIView!
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         }
     
-    @IBAction func startButtonTapped() {
+    @IBAction private func startButtonTapped() {
         let alpha: CGFloat = 1
         
         switch alpha {
